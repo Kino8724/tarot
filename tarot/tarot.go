@@ -15,7 +15,7 @@ func randRange(min, max int) int {
 	return rand.IntN(max-min) + min
 }
 
-func main() {
+func tarot() {
 	// Major Arcana Cards
 	theFool := card{
 		name:        "0. The Fool",
