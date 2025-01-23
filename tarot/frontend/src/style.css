@@ -1,5 +1,27 @@
 html {
-    background-color: rgba(27, 38, 54, 1);
+    background-color: black;
+    background-image: radial-gradient(
+            white,
+            rgba(255, 255, 255, 0.2) 2px,
+            transparent 40px
+        ),
+        radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+        radial-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.1) 2px,
+            transparent 30px
+        );
+    background-size:
+        550px 550px,
+        350px 350px,
+        250px 250px,
+        150px 150px;
+    background-position:
+        0 0,
+        40px 60px,
+        130px 270px,
+        70px 100px;
     text-align: center;
     color: white;
 }
@@ -21,19 +43,12 @@ body {
         "Helvetica Neue",
         sans-serif;
 }
-
-.card:first-child {
-    border-top: 3px solid red;
-}
-
-.card:last-child {
-    border-bottom: none;
-}
-
 .card {
-    margin: auto;
+    margin: 1% auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 40px;
     width: 50vw;
-    border-bottom: 3px solid red;
 }
 
 @font-face {
